@@ -179,7 +179,9 @@ const Header = ({value,setValue,selectedIndex,setSelectedIndex}) => {
               }
             }
             break
-            case "/estimate":setValue(5);
+            case "/estimate":
+            if(value!==5){  
+            setValue(5);}
             break
             default:break
         }
